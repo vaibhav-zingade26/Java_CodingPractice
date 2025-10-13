@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 public class charCount {
     public static void main(String[] args) {
         String name = "Vaibhav Chandrakant Zingade";
+        //Result = {a=7, e=2, i=3, v=2, b=1, h=2, c=1, n=3, d=2, r=1, k=1, t=1, z=1, g=1}
         name=name.toLowerCase();
 
         HashMap<Character,Integer> cc = new LinkedHashMap<>();
