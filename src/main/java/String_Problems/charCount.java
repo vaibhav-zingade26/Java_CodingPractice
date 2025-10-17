@@ -9,7 +9,7 @@ public class charCount {
         //Result = {a=7, e=2, i=3, v=2, b=1, h=2, c=1, n=3, d=2, r=1, k=1, t=1, z=1, g=1}
         name=name.toLowerCase();
 
-        HashMap<Character,Integer> cc = new LinkedHashMap<>();
+        HashMap<Character,Integer> cc = new HashMap<>();
         for(char a:name.toCharArray()){
             if(a!=' '){
                 if(cc.containsKey(a)){

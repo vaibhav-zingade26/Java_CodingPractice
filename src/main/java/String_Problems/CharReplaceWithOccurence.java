@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 public class CharReplaceWithOccurence {
     public static void main(String[] args) {
         String word="aabbbbbrrtgyyhnnh";
+        //Result : 225555522tg222222
         HashMap<Character,Integer>cc=new LinkedHashMap<>();
         for(char a:word.toCharArray()){
             if(cc.containsKey(a)){
