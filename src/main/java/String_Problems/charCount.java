@@ -33,6 +33,5 @@ public class charCount {
             }
         }
         System.out.println(r);
-
     }
 }
