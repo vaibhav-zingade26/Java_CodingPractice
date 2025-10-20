@@ -24,7 +24,7 @@ public class charCount {
         HashMap<Character,Integer> r = new LinkedHashMap<>();
         for(char a:v.toCharArray()){
             if(cc.containsKey(a)){
-                r.put(a,cc.getOrDefault(a,0)+1);
+                r.put(a,cc.get(a));
             }
         }
         for(char a:cc.keySet()){

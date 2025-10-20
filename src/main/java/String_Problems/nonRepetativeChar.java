@@ -27,9 +27,7 @@ public class nonRepetativeChar {
         String s=a;
         HashMap<Character,Integer>cc=new LinkedHashMap<>();
         for(char b:s.toCharArray()){
-
-                cc.put(b,cc.getOrDefault(b,0)+1);
-
+            cc.put(b,cc.getOrDefault(b,0)+1);
         }
         System.out.println(cc);
         String result="";
