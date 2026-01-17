@@ -11,13 +11,15 @@ public class CapGemini_SubString {
             counter++;
         }
 
-        String out=given.substring(counter);
+        //System.out.println(given.substring(counter) + "0".repeat(counter));
 
+        String out= given.substring(counter);
         for(int i=0;i<counter;i++){
-            out=out+'0';
+            out+="0";
         }
-
         System.out.println(out);
+
+        System.out.println(given.substring(counter)+"0".repeat(counter));
 
     }
 }
