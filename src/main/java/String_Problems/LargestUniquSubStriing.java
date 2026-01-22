@@ -1,5 +1,7 @@
 package String_Problems;
 
+//Brute Force Approach
+
 public class LargestUniquSubStriing {
     public static boolean isUnique(String sub){
         for(int i=0;i<sub.length();i++){

@@ -18,7 +18,7 @@ public class HSBC_problem {
         //first duplicate number
         for(char b:hp.keySet()){
             if(hp.get(b)>1){
-                System.out.println("First duplicate characte is "+b);
+                System.out.println("First duplicate character is "+b);
                 break;
             }
         }
