@@ -7,4 +7,8 @@ public abstract class ParentAirCraft {
     }
 
     public abstract void colourOfAirLine();
+
+    public void chargesOfAircraft(){
+        System.out.println("Charges of parent airCraft" );
+    }
 }

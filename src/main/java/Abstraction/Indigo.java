@@ -1,18 +1,39 @@
 package Abstraction;
 
 public class Indigo extends ParentAirCraft {
+    ParentAirCraft p;
+    public Indigo(){
+
+    }
+
+    public void parentMethod(){
+        p=new ParentAirCraft() {
+            @Override
+            public void colourOfAirLine() {
+
+            }
+        };
+        System.out.println("*******************");
+        p.chargesOfAircraft();
+
+    }
 
     public static void main(String[] args) {
         //UpCasting
-        ParentAirCraft p = new Indigo();
+        ParentAirCraft p = new Indigo();  // upcasting
         p.colourOfAirLine();
+        p.chargesOfAircraft();
+
+
+
         //DownCasting
         Indigo ig=(Indigo)p;
-        ig.chargesOfIndigo();
+        ig.chargesOfAircraft();
 
         Indigo c = new Indigo();
-        c.chargesOfIndigo();
+        c.chargesOfAircraft();
         c.engine_Guideline();
+        c.parentMethod();
     }
 
         @Override
@@ -20,7 +41,7 @@ public class Indigo extends ParentAirCraft {
             System.out.println("Black and Blue");
         }
 
-        public void chargesOfIndigo(){
+        public void chargesOfAircraft(){
             System.out.println("Charges of Indigo");
         }
 
