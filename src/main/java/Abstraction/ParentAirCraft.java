@@ -6,7 +6,9 @@ public abstract class ParentAirCraft {
         System.out.println("Follow engine_Guideline");
     }
 
-    public abstract void colourOfAirLine();
+    public  void colourOfAirLine(){
+
+    }
 
     public void chargesOfAircraft(){
         System.out.println("Charges of parent airCraft" );
